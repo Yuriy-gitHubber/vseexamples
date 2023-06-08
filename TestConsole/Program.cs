@@ -1,6 +1,7 @@
 ﻿using System;
+using VsExamples.CalcLib;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace VsExamples.TestConsole // Note: actual namespace depends on the project name.
 {
     internal class Program
     {
@@ -8,8 +9,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
         {   
             int x = 10;
             int y = x + 20;
-            Console.WriteLine("Всем хай!");
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("x + y = {0}" , Calc.Sum(x,y) );
         }
     }
 }
